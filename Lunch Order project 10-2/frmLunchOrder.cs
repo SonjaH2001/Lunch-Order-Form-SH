@@ -287,8 +287,8 @@ namespace Lunch_Order_project_10_2
                 decimal total = tax + subtotal;//calculates the total
                 decimal multiTotal = MultiOrderSubtotal - tax;   
                 
-                multiTax += tax;
-                MultiOrderSubtotal += total;
+                multiTax += tax;//adds new order tax to tax total
+                MultiOrderSubtotal += total;//adds new order total to total
 
                 txtTax.Text = multiTax.ToString("c");//converts tax, formats to currency and displays
                 txtTotal.Text = MultiOrderSubtotal.ToString("c");//converts total, formats to currency and displays
